@@ -10,7 +10,7 @@ import Foundation
 
 class SingletonExample {
     static let sharedInstance = SingletonExample()
-    
+    let a = "a"
     private init() {}
     
 }
