@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     @IBAction func readData(_ sender: Any) {
         User.sharedUser.nickName = textField.text
         print(User.sharedUser.nickName!)
-      //  User.sharedUser.birthDate = "12-22-05"
+        User.sharedUser.birthDate = "12-22-05"
       //  User.sharedUser.passions?.append("Video Games")    }
 }
 }
