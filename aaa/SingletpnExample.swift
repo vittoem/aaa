@@ -11,6 +11,7 @@ import Foundation
 class SingletonExample {
     static let sharedInstance = SingletonExample()
     let a = "a"
+    let b = "b"
     private init() {}
     
 }
