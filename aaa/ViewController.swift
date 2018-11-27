@@ -10,12 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let _ = ""
         // Do any additional setup after loading the view, typically from a nib.
     }
 
 
+    @IBAction func readData(_ sender: Any) {
+        User.sharedUser.nickName = textField.text
+        print(User.sharedUser.nickName!)
+      //  User.sharedUser.birthDate = "12-22-05"
+      //  User.sharedUser.passions?.append("Video Games")    }
 }
-
+}
